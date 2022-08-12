@@ -66,21 +66,21 @@ Select the authorization type `Bearer token`  and use the variable `token` for t
 Click on `Import a .proto file` in service definition
 ![](../Images/gnmi-postman-service-definition-1.png)
 
-Select the proto file from the repo you cloned, and define the import path to use if your .proto file import other.proto files.
-![](../Images/gnmi-postman-service-definition-2.png)
+Select the .proto file from the repo you cloned, and define the import path to use if your .proto file import other.proto files.
 ![](../Images/gnmi-postman-service-definition-3.png)
 
 Click on `Next` and import your .proto file as an API to reuse it in other requests with Postman
 ![](../Images/gnmi-postman-service-definition-4.png)
 ![](../Images/gnmi-postman-service-definition-5.png)
 
-Select `Capabilities`
+Select the RPC `Capabilities` from the `gNMI` service
 ![](../Images/gnmi-postman-service-definition-6.png)
 
 Enable TLS
 ![](../Images/gnmi-postman-enable-tls-1.png)
 
-Click on Invoke
+Click on Invoke.  
+You should get a response.  
 ![](../Images/gnmi-postman-capabilities.png)
 
 Save the new request (name it `Capabilities`) to a new collection (name it `gNMI`)

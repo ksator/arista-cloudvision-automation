@@ -22,6 +22,7 @@ This repository has CloudVision automation examples
   - gRPCurl
   - pygnmicli
   - Python with the module pyGNMI
+  - Postman
 - [GO](GO.md): How to install GO which is a requirement to install some tools
   - gRPCurl
   - gnmi

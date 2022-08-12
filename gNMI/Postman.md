@@ -8,7 +8,7 @@
 - [Create and activate a new environment](#create-and-activate-a-new-environment)
 - [Create a new request (Capablities)](#create-a-new-request-capablities)
 - [Verify the new API](#verify-the-new-api)
-- [Add another request to the new collection (Subscribe)](#add-another-request-to-the-new-collection-subscribe)
+- [Add another request (Subscribe) to the new collection (gNMI)](#add-another-request-subscribe-to-the-new-collection-gnmi)
 
 # Postman and gRPC
 
@@ -66,7 +66,9 @@ Select the authorization type `Bearer token`  and use the variable `token` for t
 Click on `Import a .proto file` in service definition
 ![](../Images/gnmi-postman-service-definition-1.png)
 
-Select the .proto file from the repo you cloned, and define the import path to use if your .proto file import other.proto files.
+Select the .proto file from the repo you cloned, and define the import path to use if your .proto file import other .proto files.  
+The gNMI proto file is https://github.com/openconfig/gnmi/blob/master/proto/gnmi/gnmi.proto  
+It imports https://github.com/openconfig/gnmi/blob/master/proto/gnmi_ext/gnmi_ext.proto  
 ![](../Images/gnmi-postman-service-definition-3.png)
 
 Click on `Next` and import your .proto file as an API to reuse it in other requests with Postman
@@ -92,7 +94,7 @@ From your workspace, verify the new API.
 
 ![](../Images/gnmi-postman-api-definition-1.png)
 
-# Add another request to the new collection (Subscribe)
+# Add another request (Subscribe) to the new collection (gNMI)
 
 Duplicate the previous request (`Capabilities`).  
 Rename it to `Subscribe to interfaces state`.  
@@ -129,11 +131,10 @@ Copy this in the message (update the `target` with the SN of your device):
 }
 ```
 
-Click on `Invoke`
-
 ![](../Images/subscribe.png)
 
+Click on `Invoke`  
 Click on `Send`
 ![](../Images/invoke-send.png)
 
-Save this request.  
+Save this request.

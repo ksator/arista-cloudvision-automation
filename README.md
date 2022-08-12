@@ -1,4 +1,4 @@
-[![License](https://img.shields.io/badge/license-Apache%202.0-brightgreen.svg)](https://github.com/ksator/cvp-automation/blob/master/LICENSE)
+[![License](https://img.shields.io/badge/license-Apache%202.0-brightgreen.svg)](https://github.com/ksator/cloudvision-automation/blob/master/LICENSE)
 
 **Table of Contents**
 
@@ -10,7 +10,7 @@
 
 # About this repository
 
-This repository has CVP automation examples
+This repository has CloudVision automation examples
 
 ## Repository description
 

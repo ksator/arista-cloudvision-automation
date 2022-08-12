@@ -33,7 +33,7 @@ Login or create a Postman acccount.
 
 # Create a workspace
 
-Once logged in, on the top left side of your Postman homepage, click on **Workspaces** and create a new workspace for this lab.
+Once logged in, on the top left side of your Postman homepage, click on **Workspaces** and create a new workspace.
 
 ![Create new Workspace](../../Images/Postman_Step1.png)
 

@@ -67,11 +67,11 @@ CVP APIs require [token based authentication](Token%20based%20authentication).
 [RESTCONF](RESTCONF) and [gNMI](gNMI) require:
 
 - To configure the devices to stream OpenConfig data to CVP.
-- Configuring the devices to stream OpenConfig data to CVP require to use certificate based authentication (for EOS and CVP communication).
+- Configuring the devices to stream OpenConfig data to CVP requires to use certificate based authentication (for EOS and CVP communication).
   
 So [RESTCONF](RESTCONF) and [gNMI](gNMI) require:
 
-- [Certificate based authentication](Certificate%20based%20authentication/) (for EOS and CVP communication)
+- [Certificate based authentication](Certificate%20based%20authentication/) (for devices and CVP communication)
 - [YANG](YANG)
 - [OpenConfig](OpenConfig)
 - [Token based authentication](Token%20based%20authentication) (required for all CVP APIs)

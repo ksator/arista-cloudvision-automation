@@ -61,38 +61,38 @@ From your workspace, select **New > gRPC Request**
 
 Use the variable `grpcServerUrl` for the server URL  
 Select the authorization type `Bearer token`  and use the variable `token` for the token  
-![](../Images/gnmi-postman-new.png)
+![gnmi](../Images/gnmi-postman-new.png)
 
 Click on `Import a .proto file` in service definition
-![](../Images/gnmi-postman-service-definition-1.png)
+![gnmi](../Images/gnmi-postman-service-definition-1.png)
 
 Select the .proto file from the repo you cloned, and define the import path to use if your .proto file import other .proto files.  
 The gNMI proto file is https://github.com/openconfig/gnmi/blob/master/proto/gnmi/gnmi.proto  
 It imports https://github.com/openconfig/gnmi/blob/master/proto/gnmi_ext/gnmi_ext.proto  
-![](../Images/gnmi-postman-service-definition-3.png)
+![gnmi](../Images/gnmi-postman-service-definition-3.png)
 
 Click on `Next` and import your .proto file as an API to reuse it in other requests with Postman
-![](../Images/gnmi-postman-service-definition-4.png)
-![](../Images/gnmi-postman-service-definition-5.png)
+![gnmi](../Images/gnmi-postman-service-definition-4.png)
+![gnmi](../Images/gnmi-postman-service-definition-5.png)
 
 Select the RPC `Capabilities` from the `gNMI` service
-![](../Images/gnmi-postman-service-definition-6.png)
+![gnmi](../Images/gnmi-postman-service-definition-6.png)
 
 Enable TLS
-![](../Images/gnmi-postman-enable-tls-1.png)
+![gnmi](../Images/gnmi-postman-enable-tls-1.png)
 
 Click on Invoke.  
 You should get a response.  
-![](../Images/gnmi-postman-capabilities.png)
+![gnmi](../Images/gnmi-postman-capabilities.png)
 
 Save the new request (name it `Capabilities`) to a new collection (name it `gNMI`)
-![](../Images/save.png)
+![gnmi](../Images/save.png)
 
 # Verify the new API
 
 From your workspace, verify the new API.
 
-![](../Images/gnmi-postman-api-definition-1.png)
+![gnmi](../Images/gnmi-postman-api-definition-1.png)
 
 # Add another request (Subscribe) to the new collection (gNMI)
 
@@ -131,10 +131,10 @@ Copy this in the message (update the `target` with the SN of your device):
 }
 ```
 
-![](../Images/subscribe.png)
+![gnmi](../Images/subscribe.png)
 
 Click on `Invoke`  
 Click on `Send`
-![](../Images/invoke-send.png)
+![gnmi](../Images/invoke-send.png)
 
 Save this request.

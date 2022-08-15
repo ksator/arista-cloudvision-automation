@@ -3,50 +3,50 @@
 **Table of Contents**
 
 - [About this repository](#about-this-repository)
-  - [Repository description](#repository-description)
-  - [About the tools used in this repository](#about-the-tools-used-in-this-repository)
-  - [Requirements](#requirements)
-  - [CVP version](#cvp-version)
+- [Repository description](#repository-description)
+- [About the tools used in this repository](#about-the-tools-used-in-this-repository)
+- [Requirements](#requirements)
+- [CVP version](#cvp-version)
 
 # About this repository
 
 This repository has CloudVision automation examples
 
-## Repository description
+# Repository description
 
 - [Certificate based authentication](Certificate%20based%20authentication): How to configure certificate based authentication (for the devices and CVP communication) which is required for the devices to stream OpenConfig data to CVP
 - [cvprac](cvprac/): How to use the Python module cvprac
-- [gNMI](gNMI/): How to use gNMI with various gNMI clients
+- [gNMI](gNMI/): How to use gNMI with
   - gNMIc
   - gnmi
-  - gRPCurl
-  - pygnmicli
+  - pygnmicli  
   - Python with the module pyGNMI
+  - gRPCurl
   - Postman
 - [GO](GO.md): How to install GO which is a requirement to install some tools
   - gRPCurl
   - gnmi
 - [OpenConfig](OpenConfig/): How to configure the devices to stream OpenConfig data to CVP
-- [Resource APIs](Resource%20APIs/): How to use resources API with various tools
+- [Resource APIs](Resource%20APIs/): How to use resources API with
   - cURL
   - gRPCurl
   - Python with the module
     - requests
     - cvprac
-- [REST APIs](REST%20APIs/): How to use REST APIs with various tools
+- [REST APIs](REST%20APIs/): How to use REST APIs with
   - cURL
   - Wget
   - Postman
   - Python with the module requests
-- [RESTCONF](RESTCONF/): How to use RESTCONF with various tools
+- [RESTCONF](RESTCONF/): How to use RESTCONF with
   - cURL
   - Python with the module requests
 - [Token based authentication](Token%20based%20authentication/): How to configure token based authentication which is a requirement in order to use CVP APIs
-- [YANG](YANG/): How to generate paths and trees from YANG modules with various tools
+- [YANG](YANG/): How to generate paths and trees from YANG modules with
   - gNMIc
   - Pyang
 
-## About the tools used in this repository
+# About the tools used in this repository
 
 - **cURL** is a command-line tool for getting or sending data using URLs
 - **Wget** is a program that retrieves content from web servers
@@ -61,22 +61,12 @@ This repository has CloudVision automation examples
 - **pyang** can be used to generate a tree representation of YANG models for quick visualization
 - **gRPCurl** is a command-line tool that lets you interact with gRPC servers. It's basically curl for gRPC servers  
 
-## Requirements
+# Requirements
 
-CVP APIs require [token based authentication](Token%20based%20authentication).  
-
-[RESTCONF](RESTCONF) and [gNMI](gNMI) require:
-
-- To configure the devices to stream OpenConfig data to CVP.
-- Configuring the devices to stream OpenConfig data to CVP requires to use certificate based authentication (for EOS and CVP communication).
+- CVP APIs require [token based authentication](Token%20based%20authentication).  
+- [RESTCONF](RESTCONF) and [gNMI](gNMI) require to configure the devices to stream [OpenConfig](OpenConfig) data to CVP.  
+- Configuring the devices to stream [OpenConfig](OpenConfig) data to CVP requires to use [certificate based authentication](Certificate%20based%20authentication/) (for devices and CVP communication).
   
-So [RESTCONF](RESTCONF) and [gNMI](gNMI) require:
-
-- [Certificate based authentication](Certificate%20based%20authentication/) (for devices and CVP communication)
-- [YANG](YANG)
-- [OpenConfig](OpenConfig)
-- [Token based authentication](Token%20based%20authentication) (required for all CVP APIs)
-
-## CVP version
+# CVP version
 
 All examples in this repository have been tested with CVP version 2022.1.0.

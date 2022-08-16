@@ -3,7 +3,6 @@
 **Table of Contents**
 
 - [About this repository](#about-this-repository)
-- [Repository description](#repository-description)
 - [About the tools used in this repository](#about-the-tools-used-in-this-repository)
 - [Requirements](#requirements)
 - [CVP version](#cvp-version)
@@ -11,8 +10,6 @@
 # About this repository
 
 This repository has CloudVision automation examples
-
-# Repository description
 
 - [Certificate based authentication](Certificate%20based%20authentication): How to configure certificate based authentication (for the devices and CVP communication) which is required for the devices to stream OpenConfig data to CVP
 - [cvprac](cvprac/): How to use the Python module cvprac

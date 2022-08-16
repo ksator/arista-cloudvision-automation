@@ -14,9 +14,10 @@ This repository has CloudVision automation examples
 - [Certificate based authentication](Certificate%20based%20authentication): How to configure certificate based authentication (for the devices and CVP communication) which is required for the devices to stream OpenConfig data to CVP
 - [cvprac](cvprac/): How to use the Python module cvprac
 - [gNMI](gNMI/): How to use gNMI with
-  - gNMIc
-  - gnmi
-  - pygnmicli  
+  - the gNMI command line client
+    - gNMIc
+    - gnmi
+    - pygnmicli  
   - Python with the module pyGNMI
   - gRPCurl
   - Postman

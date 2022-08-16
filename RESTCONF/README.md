@@ -1,16 +1,16 @@
 **Table of Contents**
 
 - [About RESTCONF](#about-restconf)
-  - [RESTCONF and EOS Switches](#restconf-and-eos-switches)
-  - [RESTCONF and CVP](#restconf-and-cvp)
-    - [About RESTCONF and CVP](#about-restconf-and-cvp)
-    - [Requirements](#requirements)
-      - [Configure the devices to stream OpenConfig data to CVP](#configure-the-devices-to-stream-openconfig-data-to-cvp)
-      - [Token based authentication](#token-based-authentication)
-    - [Origin and target](#origin-and-target)
-    - [DeviceID](#deviceid)
-    - [URL Format](#url-format)
-    - [OpenConfig paths](#openconfig-paths)
+- [RESTCONF and EOS Switches](#restconf-and-eos-switches)
+- [RESTCONF and CVP](#restconf-and-cvp)
+  - [About RESTCONF and CVP](#about-restconf-and-cvp)
+  - [Requirements](#requirements)
+    - [Configure the devices to stream OpenConfig data to CVP](#configure-the-devices-to-stream-openconfig-data-to-cvp)
+    - [Token based authentication](#token-based-authentication)
+  - [Origin and target](#origin-and-target)
+  - [DeviceID](#deviceid)
+  - [URL Format](#url-format)
+  - [OpenConfig paths](#openconfig-paths)
 - [RESTCONF examples](#restconf-examples)
 
 # About RESTCONF
@@ -25,7 +25,7 @@ The following RESTCONF methods are sent by the client:
 - DELETE: to delete the target resource
 - HEAD: to retrieve the header fields (which contain the metadata for a resource) that would be returned for the comparable GET method, without the response message-body. It is supported for all resources that support the GET method
 
-## RESTCONF and EOS Switches
+# RESTCONF and EOS Switches
 
 EOS supports the 5 RESTCONF methods.
 
@@ -33,9 +33,9 @@ EOS can be configured to run a RESTCONF server.
 
 Examples: https://github.com/arista-netdevops-community/restconf_demo_with_arista
 
-## RESTCONF and CVP
+# RESTCONF and CVP
 
-### About RESTCONF and CVP
+## About RESTCONF and CVP
 
 Once we configured the devices to stream OpenConfig data to CVP, we can use RESTCONF and the GET method to retrieve OpenConfig data from CVP.
 
@@ -45,13 +45,13 @@ This [document](https://aristanetworks.force.com/AristaCommunity/s/article/Under
 
 **Note:** This is not yet fully supported by Arista so do not use it on production
 
-### Requirements
+## Requirements
 
-#### Configure the devices to stream OpenConfig data to CVP
+### Configure the devices to stream OpenConfig data to CVP
 
 Refer to the [OpenConfig directory](../OpenConfig)
 
-#### Token based authentication
+### Token based authentication
 
 To use RESTCONF with CVP, token based authentication is required.  
 To enable token based authentication, refer to [this directory](../Token%20based%20authentication) and copy the token into an environment variable.
@@ -63,7 +63,7 @@ echo $token
 
 We can now use RESTCONF to access device OpenConfig data on CVP.
 
-### Origin and target
+## Origin and target
 
 `arista-origin`and `arista-target` need to be added as query arguments in the URL:
 
@@ -73,12 +73,12 @@ We can now use RESTCONF to access device OpenConfig data on CVP.
 - The default `arista-target` is CVP.
   - To get the states of a device, `arista-target` must be the deviceID (SN of the switch).
 
-### DeviceID
+## DeviceID
 
 The deviceID is the device SN.  
 on CVP GUI, go to **Devices > Inventory** to get the device SN.  
 
-### URL Format
+## URL Format
 
 To get CVP data (inventory ...), here's the URL format:  
 ```https://{{cvp_ip_address}}/restconf/data/{{cvp_path}}?arista-origin=arista&arista-target=```
@@ -86,7 +86,7 @@ To get CVP data (inventory ...), here's the URL format:
 To get the OpenConfig data streamed by a device to CVP, here's the URL format:  
 ```https://{{cvp_ip_address}}/restconf/data/{{OpenConfig_path}}?arista-target={{device_SN}}&arista-origin=openconfig```
 
-### OpenConfig paths
+## OpenConfig paths
 
 Use the telemetry browser on CVP GUI (**Settings and Tools** > **Developper Tools** > **Telemetry Browser**) to view the OpenConfig data stored in CloudVision telemetry database. The paths in CVP are not exactly the OpenConfig paths. You will need to manipulate them to be able to use them with cURL or requests.
 

@@ -4,7 +4,7 @@
 - [Requirement](#requirement)
   - [Install cvprac](#install-cvprac)
   - [Token based authentication](#token-based-authentication)
-- [cvprac examples](#cvprac-examples)
+- [Examples](#examples)
 
 # About cvprac
 
@@ -26,6 +26,6 @@ pip list
 
 Token based authentication is required. To enable token based authentication, refer to [this directory](../Token%20based%20authentication)
 
-# cvprac examples
+# Examples
 
 You will find examples in this directory.

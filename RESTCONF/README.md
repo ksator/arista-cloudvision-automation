@@ -11,7 +11,7 @@
   - [DeviceID](#deviceid)
   - [URL Format](#url-format)
   - [OpenConfig paths](#openconfig-paths)
-  - [RESTCONF and CVP examples](#restconf-and-cvp-examples)
+  - [Examples](#examples)
 
 # About RESTCONF
 
@@ -92,7 +92,7 @@ Use the telemetry browser on CVP GUI (**Settings and Tools** > **Developper Tool
 
 Refer to the [YANG](../YANG/) directory to understand how to generate paths and trees from YANG modules.
 
-## RESTCONF and CVP examples
+## Examples
 
 You will find in this directory examples using:
 

@@ -2,8 +2,7 @@
 
 - [About OpenConfig](#about-openconfig)
 - [OpenConfig support on EOS](#openconfig-support-on-eos)
-- [OpenConfig Lab Guide](#openconfig-lab-guide)
-  - [Goal](#goal)
+- [Configure the devices to stream OpenConfig data to CVP](#configure-the-devices-to-stream-openconfig-data-to-cvp)
   - [Requirements](#requirements)
     - [Certificate-Based TerminAttr Authentication](#certificate-based-terminattr-authentication)
   - [Enable gNMI on EOS Devices](#enable-gnmi-on-eos-devices)
@@ -27,11 +26,7 @@ Here's the OpenConfig support on EOS
 - https://www.arista.com/en/support/toi/path-support
 - https://github.com/aristanetworks/yang
   
-# OpenConfig Lab Guide
-
-## Goal
-
-Configure the devices to stream OpenConfig data to CVP
+# Configure the devices to stream OpenConfig data to CVP
 
 ## Requirements
 

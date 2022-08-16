@@ -1,15 +1,15 @@
 **Table of Contents**
 
 - [About gNMI](#about-gnmi)
-  - [gNMI and EOS Switches](#gnmi-and-eos-switches)
-  - [gNMI and CVP](#gnmi-and-cvp)
-    - [About gNMI and CVP](#about-gnmi-and-cvp)
-    - [Requirements](#requirements)
-      - [Configure the devices to stream OpenConfig data to CVP](#configure-the-devices-to-stream-openconfig-data-to-cvp)
-      - [Token based authentication](#token-based-authentication)
-    - [Origin and target](#origin-and-target)
-    - [DeviceID](#deviceid)
-    - [OpenConfig paths](#openconfig-paths)
+- [gNMI and EOS Switches](#gnmi-and-eos-switches)
+- [gNMI and CVP](#gnmi-and-cvp)
+  - [About gNMI and CVP](#about-gnmi-and-cvp)
+  - [Requirements](#requirements)
+    - [Configure the devices to stream OpenConfig data to CVP](#configure-the-devices-to-stream-openconfig-data-to-cvp)
+    - [Token based authentication](#token-based-authentication)
+  - [Origin and target](#origin-and-target)
+  - [DeviceID](#deviceid)
+  - [OpenConfig paths](#openconfig-paths)
 - [gNMI examples](#gnmi-examples)
 
 # About gNMI
@@ -27,7 +27,7 @@ gNMI is the gRPC service. The Remote Procedure Calls (RPC)  methods of the gNMI 
 - GET: to retrieve snapshots from the target for a specified set of paths
 - SUBSCRIBE: to subscribe to updates from the target for a specified set of paths.
   
-## gNMI and EOS Switches
+# gNMI and EOS Switches
 
 EOS supports the 4 gNMI RPCs described above.
 
@@ -40,9 +40,9 @@ Examples:
 - https://github.com/arista-netdevops-community/gnmi_demo_with_arista_eos
 - https://github.com/arista-netdevops-community/automation_and_telemetry_demo
 
-## gNMI and CVP
+# gNMI and CVP
 
-### About gNMI and CVP
+## About gNMI and CVP
 
 CVP is the gNMI server.  
 
@@ -62,13 +62,13 @@ This [document](https://aristanetworks.force.com/AristaCommunity/s/article/Under
 
 **Note:** This is not yet fully supported by Arista so do not use it on production
 
-### Requirements
+## Requirements
 
-#### Configure the devices to stream OpenConfig data to CVP
+### Configure the devices to stream OpenConfig data to CVP
 
 Refer to the [OpenConfig directory](../OpenConfig)
 
-#### Token based authentication
+### Token based authentication
 
 To use gNMI with CVP, token based authentication is required. To enable token based authentication, refer to [this directory](../Token%20based%20authentication) and copy the token into an environment variable.
 
@@ -79,7 +79,7 @@ echo $token
 
 We can now use gNMI to access device OpenConfig data on CVP.
 
-### Origin and target
+## Origin and target
 
 - The default `arista-origin` is `arista`
   - `arista-origin` is `arista` for CVP data (inventory ...)
@@ -87,12 +87,12 @@ We can now use gNMI to access device OpenConfig data on CVP.
 - The default `arista-target` is CVP.
   - To get the states of a device, `arista-target` must be the deviceID (SN of the switch).
 
-### DeviceID
+## DeviceID
 
 The deviceID is the device SN.  
 on CVP GUI, go to **Devices > Inventory** to get the device SN.  
 
-### OpenConfig paths
+## OpenConfig paths
 
 Use the telemetry browser on CVP GUI (**Settings and Tools** > **Developper Tools** > **Telemetry Browser**) to view the OpenConfig data stored in CloudVision telemetry database. The paths in CVP are not exactly the OpenConfig paths. You will need to manipulate them to be able to use them with a gNMI client.
 

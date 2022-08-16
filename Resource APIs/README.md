@@ -31,7 +31,10 @@ Token based authentication is required. To enable token based authentication, re
 
 You will find in this directory examples using:
 
-- The **gRPCurl** command-line tool
-- The **cURL** command-line tool
-- The **cvprac** Python library
-- The **requests** Python library
+- The command-line tool
+  - **gRPCurl**
+  - **cURL**
+- The Python library
+  - **cvprac**
+  - **requests**
+- **Postman**

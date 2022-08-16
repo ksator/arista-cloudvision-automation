@@ -28,4 +28,4 @@ Token based authentication is required. To enable token based authentication, re
 
 # cvprac examples
 
-You will find here cvprac examples.
+You will find examples in this directory.

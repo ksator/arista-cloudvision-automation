@@ -29,7 +29,7 @@ Token based authentication is required. To enable token based authentication, re
 
 # Resource APIs Examples
 
-You will find here Resources APIs examples using:
+You will find in this directory examples using:
 
 - The **gRPCurl** command-line tool
 - The **cURL** command-line tool

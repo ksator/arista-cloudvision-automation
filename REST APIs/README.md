@@ -22,7 +22,7 @@ Use the REST API Explorer under **Settings > Developer Tools > REST API Explorer
 
 # REST APIs examples
 
-You will find here REST APIs examples using:
+You will find in this directory examples using:
 
 - The **Wget** command-line tool
 - The **cURL** command-line tool

@@ -10,7 +10,7 @@
   - [Origin and target](#origin-and-target)
   - [DeviceID](#deviceid)
   - [OpenConfig paths](#openconfig-paths)
-- [gNMI examples](#gnmi-examples)
+  - [gNMI and CVP examples](#gnmi-and-cvp-examples)
 
 # About gNMI
 
@@ -98,9 +98,9 @@ Use the telemetry browser on CVP GUI (**Settings and Tools** > **Developper Tool
 
 Refer to the [YANG](../YANG/) lab to understand how to generate paths and trees from YANG modules.
 
-# gNMI examples
+## gNMI and CVP examples
 
-You will find here gNMI examples for CVP using:
+You will find in this directory examples using:
 
 - The gNMI command-line client:
   - **gNMIc**

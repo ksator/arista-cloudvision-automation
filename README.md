@@ -28,6 +28,7 @@ This repository has CloudVision automation examples
 - [Resource APIs](Resource%20APIs/): How to use resources API with
   - cURL
   - gRPCurl
+  - Postman
   - Python with the module
     - requests
     - cvprac

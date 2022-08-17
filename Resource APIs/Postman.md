@@ -8,6 +8,10 @@
 - [Activate the new environment](#activate-the-new-environment)
 - [Create a new request using server reflexion](#create-a-new-request-using-server-reflexion)
 - [Create a new request using a .proto file](#create-a-new-request-using-a-proto-file)
+  - [Duplicate the previous request](#duplicate-the-previous-request)
+  - [Clone the cloudvision-apis repo on your automation setup](#clone-the-cloudvision-apis-repo-on-your-automation-setup)
+  - [Import a .proto file](#import-a-proto-file)
+  - [Verify the new API](#verify-the-new-api)
 
 # Postman and gRPC
 
@@ -73,3 +77,48 @@ You should get a response.
 Save the new request (name it `server-reflection`) to a new collection (name it `rAPI`)
 
 # Create a new request using a .proto file
+
+## Duplicate the previous request
+
+Rename it to `DeviceService-GetAll`  
+we will update the service definition using a .proto file
+
+## Clone the cloudvision-apis repo on your automation setup
+
+Resources are modeled with `.proto` files in the repository https://github.com/aristanetworks/cloudvision-apis  
+One of `.proto` file is https://github.com/aristanetworks/cloudvision-apis/blob/trunk/arista/inventory.v1/services.gen.proto
+
+```bash
+cd $HOME  
+pwd
+git clone https://github.com/aristanetworks/cloudvision-apis.git 
+ls cloudvision-apis
+```
+
+## Import a .proto file
+
+Click on `Import a .proto file` in service definition
+
+![](../Images/rapi-postman-service-defintion.png)
+![](../Images/rapi-postman-service-defintion2.png)
+
+Select the .proto file from the repo you cloned, and define the import path to use if your .proto file import other .proto files.  
+![](../Images/rapi-postman-service-defintion3.png)
+
+Click on `Next`  
+And click on `Import as API` to be able to reuse it in other requests with Postman  
+![](../Images/rapi-postman-service-defintion4.png)
+![](../Images/rapi-postman-service-defintion5.png)
+
+Select the RPC `GetAll` of the `DeviceService` service.  
+![](../Images/rapi-postman-select.png)
+
+Click on `Invoke`  
+![](../Images/rapi-postman-invoke.png)
+
+Save this request.
+
+## Verify the new API
+
+From your workspace, verify the new API.
+![](../Images/rapi-postman-api.png)

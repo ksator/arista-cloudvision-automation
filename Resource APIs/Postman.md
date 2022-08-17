@@ -122,3 +122,5 @@ Save this request.
 
 From your workspace, verify the new API.
 ![](../Images/rapi-postman-api.png)
+
+So you can now use this API in the service definition of other requests (instead of importing a .proto file or using server reflection).

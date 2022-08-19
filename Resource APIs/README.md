@@ -37,4 +37,4 @@ You will find in this directory examples using:
 - The Python library
   - **cvprac**
   - **requests**
-- **Postman**
+- **Postman** using gPRC

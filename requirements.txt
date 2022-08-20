@@ -1,0 +1,4 @@
+requests
+cvprac==1.2.0
+pyang
+pygnmi==0.8.5

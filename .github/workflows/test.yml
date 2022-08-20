@@ -18,7 +18,7 @@ jobs:
         run: |
           pip install --upgrade pip
           pip install -r requirements.txt
-          pip install yamlint
+          pip install yamllint
       - name: yaml-lint
         uses: ibiqlik/action-yamllint@v3
         with:

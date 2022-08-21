@@ -12,8 +12,28 @@
 
 This repository has CloudVision automation examples
 
-- [Certificate based authentication](Certificate%20based%20authentication): How to configure certificate based authentication (for the devices and CVP communication) which is required for the devices to stream OpenConfig data to CVP
+- [GO](GO.md): How to install GO which is a requirement to install some tools
+  - gRPCurl
+  - gnmi
+- [Token based authentication](Token%20based%20authentication/): How to configure token based authentication which is a requirement in order to use CVP APIs
+- [REST APIs](REST%20APIs/): How to use REST APIs with
+  - cURL
+  - Wget
+  - Postman
+  - Python with the module requests
+- [Resource APIs](Resource%20APIs/): How to use resources API with
+  - cURL
+  - gRPCurl
+  - Postman
+  - Python with the module
+    - requests
+    - cvprac
 - [cvprac](cvprac/): How to use the Python module cvprac
+- [Certificate based authentication](Certificate%20based%20authentication): How to configure certificate based authentication (for the devices and CVP communication) which is a requirement for the devices to stream OpenConfig data to CVP
+- [YANG](YANG/): How to generate paths and trees from YANG modules with
+  - gNMIc
+  - Pyang
+- [OpenConfig](OpenConfig/): How to configure the devices to stream OpenConfig data to CVP
 - [gNMI](gNMI/): How to use gNMI with
   - The gNMI command line client
     - gNMIc
@@ -22,29 +42,9 @@ This repository has CloudVision automation examples
   - Python with the module pyGNMI
   - gRPCurl
   - Postman
-- [GO](GO.md): How to install GO which is a requirement to install some tools
-  - gRPCurl
-  - gnmi
-- [OpenConfig](OpenConfig/): How to configure the devices to stream OpenConfig data to CVP
-- [Resource APIs](Resource%20APIs/): How to use resources API with
-  - cURL
-  - gRPCurl
-  - Postman
-  - Python with the module
-    - requests
-    - cvprac
-- [REST APIs](REST%20APIs/): How to use REST APIs with
-  - cURL
-  - Wget
-  - Postman
-  - Python with the module requests
 - [RESTCONF](RESTCONF/): How to use RESTCONF with
   - cURL
   - Python with the module requests
-- [Token based authentication](Token%20based%20authentication/): How to configure token based authentication which is a requirement in order to use CVP APIs
-- [YANG](YANG/): How to generate paths and trees from YANG modules with
-  - gNMIc
-  - Pyang
 
 # About the tools used in this repository
 

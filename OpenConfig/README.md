@@ -33,7 +33,7 @@ Here's the OpenConfig support on EOS
 ### Certificate-Based TerminAttr Authentication
 
 Certificate-based authentication is required for the devices to stream OpenConfig to CVP.  
-To enable certificate-based authentication between CVP and the devices, refer to [this directory](../../Certificate%20based%20authentication)
+To enable certificate-based authentication between CVP and the devices, refer to [this directory](../../certificate_based_authentication)
 
 ## Enable gNMI on EOS Devices
 
@@ -82,6 +82,6 @@ The device should now stream OpenConfig data to CVP.
 
 Use the telemetry browser on CVP GUI (**Settings and Tools** > **Developper Tools** > **Telemetry Browser**) to verify it.
 
-![gNMI_Step0.png](../Images/gNMI_Step0.png)
+![gNMI_Step0.png](../images/gNMI_Step0.png)
 
 Once we configured the devices to stream OpenConfig data to CVP, we can use [gNMI](../gNMI) or [RESTCONF](../RESTCONF)  to access to these data on CVP.

@@ -49,50 +49,50 @@ Define these two variables:
 - grpcServerUrl: use the CloudVision IP address
 - token: use the token generated previously
 
-![create new environment](../Images/postman-gnmi-new-env.png)
+![create new environment](../images/postman-gnmi-new-env.png)
 
 Activate the environment.  
-![activate environment](../Images/postman-gnmi-activate-env.png)
+![activate environment](../images/postman-gnmi-activate-env.png)
 
 # Create a new request (Capablities)
 
 From your workspace, select **New > gRPC Request**
-![create new request](../Images/postman-gnmi-new-collection.png)
+![create new request](../images/postman-gnmi-new-collection.png)
 
 Use the variable `grpcServerUrl` for the server URL  
 Select the authorization type `Bearer token`  and use the variable `token` for the token  
-![gnmi](../Images/gnmi-postman-new.png)
+![gnmi](../images/gnmi-postman-new.png)
 
 Click on `Import a .proto file` in service definition
-![gnmi](../Images/gnmi-postman-service-definition-1.png)
+![gnmi](../images/gnmi-postman-service-definition-1.png)
 
 Select the .proto file from the repo you cloned, and define the import path to use if your .proto file import other .proto files.  
 The gNMI proto file is https://github.com/openconfig/gnmi/blob/master/proto/gnmi/gnmi.proto  
 It imports https://github.com/openconfig/gnmi/blob/master/proto/gnmi_ext/gnmi_ext.proto  
-![gnmi](../Images/gnmi-postman-service-definition-3.png)
+![gnmi](../images/gnmi-postman-service-definition-3.png)
 
 Click on `Next` and import your .proto file as an API to reuse it in other requests with Postman
-![gnmi](../Images/gnmi-postman-service-definition-4.png)
-![gnmi](../Images/gnmi-postman-service-definition-5.png)
+![gnmi](../images/gnmi-postman-service-definition-4.png)
+![gnmi](../images/gnmi-postman-service-definition-5.png)
 
 Select the RPC `Capabilities` from the `gNMI` service
-![gnmi](../Images/gnmi-postman-service-definition-6.png)
+![gnmi](../images/gnmi-postman-service-definition-6.png)
 
 Enable TLS
-![gnmi](../Images/gnmi-postman-enable-tls-1.png)
+![gnmi](../images/gnmi-postman-enable-tls-1.png)
 
 Click on Invoke.  
 You should get a response.  
-![gnmi](../Images/gnmi-postman-capabilities.png)
+![gnmi](../images/gnmi-postman-capabilities.png)
 
 Save the new request (name it `Capabilities`) to a new collection (name it `gNMI`)
-![gnmi](../Images/save.png)
+![gnmi](../images/save.png)
 
 # Verify the new API
 
 From your workspace, verify the new API.
 
-![gnmi](../Images/gnmi-postman-api-definition-1.png)
+![gnmi](../images/gnmi-postman-api-definition-1.png)
 
 # Add another request (Subscribe) to the new collection (gNMI)
 
@@ -131,10 +131,10 @@ Copy this in the message (update the `target` with the SN of your device):
 }
 ```
 
-![gnmi](../Images/subscribe.png)
+![gnmi](../images/subscribe.png)
 
 Click on `Invoke`  
 Click on `Send`
-![gnmi](../Images/invoke-send.png)
+![gnmi](../images/invoke-send.png)
 
 Save this request.

@@ -24,7 +24,7 @@ pip list
 
 ## Token based authentication
 
-Token based authentication is required. To enable token based authentication, refer to [this directory](../Token%20based%20authentication)
+Token based authentication is required. To enable token based authentication, refer to [this directory](../token_based_authentication)
 
 # Examples
 

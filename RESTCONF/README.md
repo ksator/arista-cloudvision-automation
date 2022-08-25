@@ -54,7 +54,7 @@ Refer to the [OpenConfig directory](../OpenConfig)
 ### Token based authentication
 
 To use RESTCONF with CVP, token based authentication is required.  
-To enable token based authentication, refer to [this directory](../Token%20based%20authentication) and copy the token into an environment variable.
+To enable token based authentication, refer to [this directory](../token_based_authentication) and copy the token into an environment variable.
 
 ```bash
 token=xxxxx

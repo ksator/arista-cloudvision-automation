@@ -1,4 +1,4 @@
-[![License](https://img.shields.io/badge/license-Apache%202.0-brightgreen.svg)](https://github.com/ksator/cloudvision-automation/blob/master/LICENSE)
+[![License](https://img.shields.io/badge/license-Apache_2.0-brightgreen.svg)](https://github.com/ksator/cloudvision-automation/blob/master/LICENSE)
 [![CI](https://github.com/ksator/cloudvision-automation/actions/workflows/test.yml/badge.svg)](https://github.com/ksator/cloudvision-automation/actions)
 
 **Table of Contents**
@@ -15,13 +15,13 @@ This repository has CloudVision automation examples
 - [GO](GO.md): How to install GO which is a requirement to install some tools
   - gRPCurl
   - gnmi
-- [Token based authentication](Token%20based%20authentication/): How to configure token based authentication which is a requirement in order to use CVP APIs
-- [REST APIs](REST%20APIs/): How to use REST APIs with
+- [Token based authentication](Token_based_authentication/): How to configure token based authentication which is a requirement in order to use CVP APIs
+- [REST APIs](REST_APIs/): How to use REST APIs with
   - cURL
   - Wget
   - Postman
   - Python with the module requests
-- [Resource APIs](Resource%20APIs/): How to use resources API with
+- [Resource APIs](Resource_APIs/): How to use resources API with
   - cURL
   - gRPCurl
   - Postman
@@ -29,7 +29,7 @@ This repository has CloudVision automation examples
     - requests
     - cvprac
 - [cvprac](cvprac/): How to use the Python module cvprac
-- [Certificate based authentication](Certificate%20based%20authentication): How to configure certificate based authentication (for the devices and CVP communication) which is a requirement for the devices to stream OpenConfig data to CVP
+- [Certificate based authentication](Certificate_based_authentication): How to configure certificate based authentication (for the devices and CVP communication) which is a requirement for the devices to stream OpenConfig data to CVP
 - [YANG](YANG/): How to generate paths and trees from YANG modules with
   - gNMIc
   - Pyang
@@ -63,9 +63,9 @@ This repository has CloudVision automation examples
 
 # Requirements
 
-- CVP APIs require [token based authentication](Token%20based%20authentication).  
+- CVP APIs require [token based authentication](Token_based_authentication).  
 - [RESTCONF](RESTCONF) and [gNMI](gNMI) require to configure the devices to stream [OpenConfig](OpenConfig) data to CVP.  
-- Configuring the devices to stream [OpenConfig](OpenConfig) data to CVP requires to use [certificate based authentication](Certificate%20based%20authentication/) (for devices and CVP communication).
+- Configuring the devices to stream [OpenConfig](OpenConfig) data to CVP requires to use [certificate based authentication](Certificate_based_authentication/) (for devices and CVP communication).
   
 # CVP version
 

@@ -15,13 +15,13 @@ This repository has CloudVision automation examples
 - [GO](GO.md): How to install GO which is a requirement to install some tools
   - gRPCurl
   - gnmi
-- [Token based authentication](Token_based_authentication/): How to configure token based authentication which is a requirement in order to use CVP APIs
+- [Token based authentication](token_based_authentication/): How to configure token based authentication which is a requirement in order to use CVP APIs
 - [REST APIs](REST_APIs/): How to use REST APIs with
   - cURL
   - Wget
   - Postman
   - Python with the module requests
-- [Resource APIs](Resource_APIs/): How to use resources API with
+- [Resource APIs](resource_APIs/): How to use resources API with
   - cURL
   - gRPCurl
   - Postman
@@ -29,7 +29,7 @@ This repository has CloudVision automation examples
     - requests
     - cvprac
 - [cvprac](cvprac/): How to use the Python module cvprac
-- [Certificate based authentication](Certificate_based_authentication): How to configure certificate based authentication (for the devices and CVP communication) which is a requirement for the devices to stream OpenConfig data to CVP
+- [Certificate based authentication](certificate_based_authentication): How to configure certificate based authentication (for the devices and CVP communication) which is a requirement for the devices to stream OpenConfig data to CVP
 - [YANG](YANG/): How to generate paths and trees from YANG modules with
   - gNMIc
   - Pyang

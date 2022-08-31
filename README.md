@@ -20,7 +20,6 @@ This repository has CloudVision automation examples
 - [REST APIs](REST_APIs/): How to use REST APIs with
   - cURL
   - Wget
-  - Postman
   - Python with the module requests
 - [Resource APIs](resource_APIs/): How to use resources API with
   - cURL

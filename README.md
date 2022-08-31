@@ -7,6 +7,7 @@
 - [About the tools used in this repository](#about-the-tools-used-in-this-repository)
 - [Requirements](#requirements)
 - [CVP version](#cvp-version)
+- [Credits](#credits)
 
 # About this repository
 
@@ -70,3 +71,7 @@ This repository has CloudVision automation examples
 # CVP version
 
 All examples in this repository have been tested with CVP version 2022.1.0.
+
+# Credits
+
+Thank you to [Angélique Phillipps](https://github.com/aphillipps), [Khelil Sator](https://github.com/ksator), [Matthieu Tache](https://github.com/mtache) and [Tamas Plugor](https://github.com/noredistribution) for their contributions and guidances.

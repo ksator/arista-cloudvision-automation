@@ -27,4 +27,3 @@ You will find in this directory examples using:
 - The **Wget** command-line tool
 - The **cURL** command-line tool
 - The **requests** Python library
-- **Postman**

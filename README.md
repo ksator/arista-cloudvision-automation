@@ -26,11 +26,11 @@ This repository has CloudVision automation examples
   - Online swagger editor
 - [Resource APIs](resource_APIs/): How to use resources API with
   - cURL
-  - gRPCurl
-  - Postman
   - Python with the module
     - requests
     - cvprac
+  - gRPCurl
+  - Postman using gPRC
 - [cvprac](cvprac/): How to use the Python module cvprac
 - [Certificate based authentication](certificate_based_authentication): How to configure certificate based authentication (for the devices and CVP communication) which is a requirement for the devices to stream OpenConfig data to CVP
 - [YANG](YANG/): How to generate paths and trees from YANG modules with
@@ -44,7 +44,7 @@ This repository has CloudVision automation examples
     - pygnmicli  
   - Python with the module pyGNMI
   - gRPCurl
-  - Postman
+  - Postman using gPRC
 - [RESTCONF](RESTCONF/): How to use RESTCONF with
   - cURL
   - Python with the module requests

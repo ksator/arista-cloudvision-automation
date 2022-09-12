@@ -1,5 +1,5 @@
-[![License](https://img.shields.io/badge/license-Apache_2.0-brightgreen.svg)](https://github.com/ksator/cloudvision-automation/blob/master/LICENSE)
-[![CI](https://github.com/ksator/cloudvision-automation/actions/workflows/test.yml/badge.svg)](https://github.com/ksator/cloudvision-automation/actions)
+[![License](https://img.shields.io/badge/license-Apache_2.0-brightgreen.svg)](https://github.com/ksator/arista-cloudvision-automation/blob/master/LICENSE)
+[![CI](https://github.com/ksator/arista-cloudvision-automation/actions/workflows/test.yml/badge.svg)](https://github.com/ksator/arista-cloudvision-automation/actions)
 
 **Table of Contents**
 

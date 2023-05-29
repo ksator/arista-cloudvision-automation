@@ -37,8 +37,8 @@ The gNMI client, typically in a collector or in a network management system, sen
 
 Examples:
 
-- https://github.com/arista-netdevops-community/gnmi_demo_with_arista_eos
-- https://github.com/arista-netdevops-community/automation_and_telemetry_demo
+- https://github.com/ksator/arista_eos_gnmi_demo
+- https://github.com/ksator/automation_and_telemetry_demo
 
 # gNMI and CVP
 
